@@ -354,7 +354,7 @@ Formulario público para visitantes externos con generación automática de foli
 * **RA04 (Ruteo):** Organización del servidor mediante Express Router, separando la lógica de autenticación (auth.js) de la lógica de negocio (accesos.js).
 * **RA05 (Persistencia de Cliente):** Gestión de estado de sesión en el lado del cliente mediante localStorage.
 * **RA06 (Middleware):** Uso de funciones intermedias para el parseo de cuerpos JSON (express.json) y la validación de seguridad antes de llegar a los controladores.
-![Arquitectura](/imgs/arquitecturaCapas.png)
+![Arquitectura](/imgs/arquitectura.png)
 
 ---
 
