@@ -130,22 +130,27 @@
 
 8. Estructura de carpetas:
 
+## 📁 Estructura del Proyecto
+
+```text
 nexus-guard/
 ├── backend/
-│   ├── data/             → Archivos/JSON de respaldo temporal
-│   ├── routes/           → Rutas de la API REST (auth, accesos)
-│   ├── server.js         → Configuración principal del servidor
-│   └── setup.js          → Script de inicialización de empleados
+│   ├── data/                 # Archivos/JSON de respaldo temporal
+│   ├── routes/               # Rutas de la API REST (auth, accesos)
+│   ├── server.js             # Configuración principal del servidor
+│   └── setup.js              # Script de inicialización de empleados
 ├── frontend/
-│   ├── assets/           → Logo y recursos gráficos
-│   ├── css/              → styles.css con variables globales
-│   ├── js/               → Lógica CRUD (accesos.js) y UI
-│   ├── index.html        → Dashboard principal
-│   ├── login.html        → Inicio de sesión
-│   ├── recuperar.html    → Recuperación de contraseña
-│   ├── accesos.html      → Gestión de Citas (CRUD)
-│   └── cita.html         → Solicitud de cita externa└── README.md
-
+│   ├── assets/               # Logo y recursos gráficos
+│   ├── css/                  # styles.css con variables globales
+│   ├── js/                   # Lógica CRUD (accesos.js) y UI
+│   ├── index.html            # Dashboard principal
+│   ├── login.html            # Inicio de sesión
+│   ├── recuperar.html        # Recuperación de contraseña
+│   ├── accesos.html          # Gestión de Citas (CRUD)
+│   └── cita.html             # Solicitud de cita externa
+├── imgs/                     # Imágenes para la documentación del README
+└── README.md                 # Documentación del proyecto
+```
 ---
 
 # 🏢 Nexus Guard — Sistema de Control de Acceso a Oficinas
@@ -349,6 +354,7 @@ Formulario público para visitantes externos con generación automática de foli
 * **RA04 (Ruteo):** Organización del servidor mediante Express Router, separando la lógica de autenticación (auth.js) de la lógica de negocio (accesos.js).
 * **RA05 (Persistencia de Cliente):** Gestión de estado de sesión en el lado del cliente mediante localStorage.
 * **RA06 (Middleware):** Uso de funciones intermedias para el parseo de cuerpos JSON (express.json) y la validación de seguridad antes de llegar a los controladores.
+![Arquitectura](/imgs/arquitecturaCapas.png)
 
 ---
 
